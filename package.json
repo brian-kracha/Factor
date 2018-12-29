@@ -1,0 +1,22 @@
+{
+  "name": "factor",
+  "version": "1.0.0",
+  "description": "An API for sending facts and stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brian-kracha/Factor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brian-kracha/Factor/issues"
+  },
+  "homepage": "https://github.com/brian-kracha/Factor#readme",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  }
+}
