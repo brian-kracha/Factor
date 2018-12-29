@@ -1,10 +1,11 @@
-const Hapi = require('hapi');
-module.exports= [
+
+
+module.exports = [
   {
-    method:'GET',
-    path:'/healthcheck',
+    method: 'GET',
+    path: '/healthcheck',
     handler: () => {
-      return "booty got me goin like whoa"
-    }
+      return 'booty got me goin like whoa';
+    },
   },
-]
+];
