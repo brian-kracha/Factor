@@ -1,6 +1,6 @@
 
 const routes = require('./routes');
-
+const knex = require('../knex.js')
 const Hapi = require('hapi');
 
 // Create a server with a host and port
