@@ -1,2 +1,2 @@
 # SuprFactr
-An API for sending facts and stuff
+An API for sending facts and stuff.
