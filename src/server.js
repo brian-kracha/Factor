@@ -1,30 +1,29 @@
-'use strict';
-const routes = require('./routes')
 
-const Hapi=require('hapi');
+const routes = require('./routes');
+
+const Hapi = require('hapi');
 
 // Create a server with a host and port
-const server=Hapi.server({
-    host:'localhost',
-    port:8000
+const server = Hapi.server({
+  host: 'localhost',
+  port: 8000,
 });
-//baseRoute
+// baseRoute
 
 // Add the route
 server.route(routes);
 
 // Start the server
-const start =  async function() {
+const start = async() => {
 
-    try {
-        await server.start();
-    }
-    catch (err) {
-        console.log(err);
-        process.exit(1);
-    }
+  try {
+    await server.start();
+  } catch (err) {
+    console.log(err);
+    process.exit(1);
+  }
 
-    console.log('Server running at:', server.info.uri);
+  console.log('Server running at:', server.info.uri);
 };
 
 start();
