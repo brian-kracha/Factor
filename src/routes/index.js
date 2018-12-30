@@ -1,11 +1,15 @@
-
+const knex = require('../../knex')
 
 module.exports = [
   {
     method: 'GET',
     path: '/healthcheck',
     handler: () => {
-      return 'booty got me goin like whoa';
+      return knex('dinosaurFacts')
+      .select('*')
+      .then(fact => {
+        return fact
+      })
     },
   },
 ];
