@@ -5,7 +5,8 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('dinosaurFacts').insert([
-        { fact: 'I am the smartest man alive'}
+        { fact: 'I am the smartest man alive'},
+        { fact: 'Except not really'},
       ]);
     });
 };
