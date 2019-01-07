@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('userId').notNullable();
     table.string('factId').notNullable();
-  })
+  });
 };
 
 exports.down = function(knex, Promise) {

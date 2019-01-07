@@ -1,4 +1,4 @@
-const knex = require('../../knex')
+const knex = require('../../knex');
 
 module.exports = [
   {
@@ -6,10 +6,10 @@ module.exports = [
     path: '/healthcheck',
     handler: () => {
       return knex('dinosaurFacts')
-      .select('*')
-      .then(fact => {
-        return fact
-      })
+        .select('*')
+        .then(fact => {
+          return fact;
+        });
     },
   },
 ];
